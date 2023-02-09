@@ -13,7 +13,7 @@ cd /mnt/blockstore/sui
     - genesis
     > /data
     
-    	docker run -it -d -p 9000:9000 -p 9184:9184 -v /mnt/blockstore/sui:/data sui-node --config-path /data/fullnode.yaml
+    	docker run -it -d -p 9000:9000 -p 9184:9184 -v /mnt/blockstore/sui:/data --name sui sui-node --config-path /data/fullnode.yaml
     
 detail https://nodes.guru/sui/setup-guide/en
 
