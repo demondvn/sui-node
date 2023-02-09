@@ -9,4 +9,6 @@ RUN /bin/bash script.sh
 
 EXPOSE 9000
 EXPOSE 9184
+RUN mkdir /data
+VOLUME /data
 ENTRYPOINT ["sui-node", "--config-path /var/sui/fullnode.yaml"] 
