@@ -8,4 +8,5 @@ RUN apt install sudo -y
 RUN /bin/bash script.sh
 
 EXPOSE 9000
+EXPOSE 9184
 ENTRYPOINT ["sui-node", "--config-path /var/sui/fullnode.yaml"] 
