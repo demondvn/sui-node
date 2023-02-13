@@ -14,5 +14,5 @@ EXPOSE 9184
 EXPOSE 8080
 RUN mkdir /var/sui
 VOLUME /var/sui
-CMD /bin/bash script.sh || sleep 30000
+CMD /bin/bash script.sh && sui-node --config-path "/var/sui/fullnode.yaml"
 # ENTRYPOINT ["sui-node"] 
