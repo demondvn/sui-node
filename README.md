@@ -17,5 +17,8 @@
 ## Run
     docker run -it -d -p 9000:9000 -p 9184:9184 -v /mnt/blockstore/sui:/var/sui --name sui sui-node --config-path /var/sui/fullnode.yaml
     
-detail https://nodes.guru/sui/setup-guide/en
 
+
+## Check
+detail https://nodes.guru/sui/setup-guide/en
+  https://www.scale3labs.com/check/sui
