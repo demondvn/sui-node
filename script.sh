@@ -34,6 +34,6 @@ source $HOME/.cargo/env
 cp crates/sui-config/data/fullnode-template.yaml /var/sui/fullnode.yaml
 sed -i.bak "s/db-path:.*/db-path: \"\/var\/sui\/suidb\"/ ; s/genesis-file-location:.*/genesis-file-location: \"\/var\/sui\/genesis.blob\"/" /var/sui/fullnode.yaml
 wget -O /var/sui/genesis.blob https://github.com/MystenLabs/sui-genesis/raw/main/testnet/genesis.blob
-sui-node --config-path "/var/sui/fullnode.yaml"
+
 
 # mv ~/sui/target/release/sui-node /usr/local/bin/ || exit
