@@ -26,5 +26,9 @@
 
 
 ## Check
-detail https://nodes.guru/sui/setup-guide/en
-  https://www.scale3labs.com/check/sui
+detail 
+
+https://nodes.guru/sui/setup-guide/en
+
+
+https://www.scale3labs.com/check/sui
