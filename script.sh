@@ -15,7 +15,7 @@ if [ -f "$bash_profile" ]; then
 fi
 sleep 1 && curl -s https://api.nodes.guru/logo.sh | bash && sleep 2
 echo -e 'Setting up swapfile...\n'
-curl -s https://api.nodes.guru/swap8.sh | bash
+# curl -s https://api.nodes.guru/swap8.sh | bash
 
 # echo -e '\n\e[42mInstall software\e[0m\n' && sleep 1
 # apt-get update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -y --no-install-recommends tzdata git ca-certificates curl build-essential libssl-dev pkg-config libclang-dev cmake jq
