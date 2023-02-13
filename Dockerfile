@@ -11,7 +11,7 @@ RUN chmod +x script.sh
 
 EXPOSE 9000
 EXPOSE 9184
-RUN mkdir /data
-VOLUME /data
+RUN mkdir /var/sui
+VOLUME /var/sui
 CMD /bin/bash script.sh
 # ENTRYPOINT ["sui-node"] 
