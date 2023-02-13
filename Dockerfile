@@ -5,7 +5,7 @@ WORKDIR /sui
 RUN cargo build --release -p sui-node
 FROM debian:bullseye-slim
 RUN apt-get update && apt-get install -y sudo wget curl && rm -rf /var/lib/apt/lists/*
-COPY --from=builder /usr/local/cargo/bin/sui-node /usr/local/bin/sui-node
+COPY --from=builder /sui/target/release/sui-node /usr/local/bin/sui-node
 COPY script.sh script.sh
 RUN chmod +x script.sh
 
