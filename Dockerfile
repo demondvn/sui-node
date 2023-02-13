@@ -2,7 +2,7 @@ FROM rust:1.67 as builder
 RUN apt update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt install  -y  make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop
 RUN git clone https://github.com/MystenLabs/sui.git --branch testnet
 WORKDIR /sui
-RUN cargo build --release -p sui-node || exit
+RUN cargo build --release -p sui-node
 FROM debian:bullseye-slim
 RUN apt-get update && apt-get install -y extra-runtime-dependencies sudo wget curl && rm -rf /var/lib/apt/lists/*
 COPY --from=builder /usr/local/cargo/bin/sui-node /usr/local/bin/sui-node
