@@ -3,7 +3,7 @@
 ## Build
     docker build . -t sui
 
-## Make foler data
+## Make folder data
     cd /mnt/blockstore/sui
   
     wget -O fullnode.yaml https://raw.githubusercontent.com/MystenLabs/sui/testnet/crates/sui-config/data/fullnode-template.yaml
